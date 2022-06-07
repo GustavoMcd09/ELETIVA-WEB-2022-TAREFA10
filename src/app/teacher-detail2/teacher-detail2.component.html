@@ -1,0 +1,13 @@
+<div *ngIf="teacher">
+    <button type="button" (click)="goBack()">go back</button>
+    <div>
+      <h2 class="colorWhite">Detalhes do Professor: {{teacher.nameprof}}</h2>
+      <div>
+        <label for="teacher-idprof">id </label>
+        <input id="teacher-idprof" [(ngModel)]="teacher.idprof" placeholder="id">
+      </div>
+      <div>
+        <label for="teacher-nameprof">Nome </label>
+        <input id="teacher-nameprof" [(ngModel)]="teacher.nameprof" placeholder="Nome">
+      </div>
+    </div>
