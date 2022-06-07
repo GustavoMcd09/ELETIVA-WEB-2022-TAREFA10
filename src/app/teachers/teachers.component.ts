@@ -30,5 +30,4 @@ getTeachers(): void {
   this.teacherService.getTeachers()
       .subscribe(teachers => this.teachers = teachers);
 }
-
 }

@@ -21,7 +21,7 @@ export class TeacherService {
     // For now, assume that a hero with the specified `id` always exists.
     // Error handling will be added in the next step of the tutorial.
     const teacher = TEACHERS.find(h => h.idprof === idprof)!;
-    this.messageService.add(`TeacherService: fetched teacher id=${idprof}`);
+    this.messageService.add(`Professor Selecionado id=${idprof}`);
     return of(teacher);
   }
 }

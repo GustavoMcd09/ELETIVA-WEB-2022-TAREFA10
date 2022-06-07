@@ -1,8 +1,8 @@
 <h2 class="align">Estudantes</h2>
 <ul class="students">
-  <li *ngFor="let student of students">
-    <a routerLink="/detail/{{student.id}}">
-      <span class="badge">{{student.id}}</span> {{student.name}}
+  <li *ngFor="let student of students" class="button">
+    <a class="link" routerLink="/detail/{{student.id}}">
+      <span class="badge">{{student.name}}</span>
     </a>
   </li>
 </ul>
